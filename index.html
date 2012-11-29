@@ -1,40 +1,10 @@
-<!DOCTYPE html>
-<html>
+<HTML>
+<HEAD>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Calc : " />
+<TITLE></TITLE>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Calc</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/henjuewang/Calc">View on GitHub</a>
-
-          <h1 id="project_title">Calc</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/henjuewang/Calc/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/henjuewang/Calc/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>
-</p>
-
-<p></p>
+<SCRIPT LANGUAGE="JavaScript">
 
 var zxiangduihanggao,zjg,zjx
 
@@ -128,82 +98,48 @@ document.calculator.xiangyuandaxiao.value=6.4
 
 
 
-<p></p>
-
-<p></p>
-
-<p></p>
+</script>
 
 
+</HEAD>
+
+<BODY >
+
+
+<center>
+<form name="calculator">
 
 <table>
-<td>地面分辨率（米）：</td>
-<td></td>
-<tr>
+<td>地面分辨率（米）：<td><input type="text" name="fenbianlv" size=10 maxlength=30 " value="0.1"><tr>
 <td>航摄仪型号：
-</td>
 <td>
-UCEUCLpUCDUCXUCXp5D MarkII 245D MarkII 35</td>
-</tr>
+<select name="cam" onChange="changecam()">
+<option value="uce80" >UCE</option>
+<option value="uclp" selected="selected">UCLp</option>
+<option value="ucd" >UCD</option>
+<option value="ucx">UCX</option>
+<option value="ucxp">UCXp</option>
+<option value="mark24" >5D MarkII 24</option>
+<option value="mark35" >5D MarkII 35</option>
+</select>
 <tr>
-<td>焦距（mm）：</td>
-<td></td>
-</tr>
-<tr>
-<td>象元大小（μm）：</td>
-<td></td>
-</tr>
-<tr>
-<td>旁向像幅（像素）：</td>
-<td></td>
-</tr>
-<tr>
-<td>航向像幅（像素）：</td>
-<td></td>
-</tr>
-<tr>
-<td>旁向重叠度（%）：</td>
-<td></td>
-</tr>
-<tr>
-<td>航向重叠度（%）：</td>
-<td></td>
-</tr>
-<tr><td text-align:center>
-<br>计算结果（取整）</td></tr>
-<tr>
-<td>相对航高（米）:</td>
-<td></td>
-</tr>
-<tr>
-<td>基线（米）    :</td>
-<td></td>
-</tr>
-<tr>
-<td>航线间隔（米）:</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr></tr>
+<td>焦距（mm）：</td><td><input type="text" name="jiaoju" size=10 maxlength=30 " value="70"></td><tr>
+<td>象元大小（μm）：<td><input type="text" name="xiangyuandaxiao" size=10 maxlength=30 value="6"><tr>
+<td>旁向像幅（像素）：<td><input type="text" name="pangxiangpx" size=10 maxlength=30 value="11704"><tr>
+<td>航向像幅（像素）：<td><input type="text" name="hangxiangpx" size=10 maxlength=30 value="7920"><tr>
+<td>旁向重叠度（%）：<td><input type="text" name="pangxiangcd" size=10 maxlength=30 value="35"><tr>
+<td>航向重叠度（%）：<td><input type="text" name="hangxiangcd" size=10 maxlength=30 value="65"><tr>
+<td text-align:center><br>计算结果（取整）</td><tr>
+<td>相对航高（米）:<td><input type="text" readOnly name="answer" size=10 maxlength=30 ><tr>
+
+<td>基线（米）    :<td><input type="text" readOnly name="jixian" size=10 maxlength=300 ><tr>
+<td>航线间隔（米）:<td><input type="text" readOnly name="jiange" size=10 maxlength=300 ><tr>
+
+<td><td><input id="plus1" type="button" name="plus" class="red" value=" 计算 " onClick="AddButton(1); return false;"><tr>
+
+
+
 </table>
-
-<p>
-</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Calc maintained by <a href="https://github.com/henjuewang">henjuewang</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+</form>
+</body>
 </html>
