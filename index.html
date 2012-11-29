@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Calc : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Calc</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/henjuewang/Calc">View on GitHub</a>
+
+          <h1 id="project_title">Calc</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/henjuewang/Calc/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/henjuewang/Calc/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>
+</p>
+
+<p></p>
+
+var zxiangduihanggao,zjg,zjx
+
+
+function Display()
+{
+document.calculator.answer.value = Math.round(zxiangduihanggao);
+document.calculator.jixian.value = Math.round(zjx);
+document.calculator.jiange.value = Math.round(zjg);
+}
+
+
+function AddButton(x) {
+if(x == 1) 
+{
+x = 0;
+zxiangduihanggao = document.calculator.fenbianlv.value * document.calculator.jiaoju.value /document.calculator.xiangyuandaxiao.value *1000;
+//zjg=zxiangduihanggao+2;
+//var fff=document.calculator.fenbianlv.value,pxf=document.calculator.pangxiangpx.value,pcd=document.calculator.pangxiangcd.value;
+//zjx=fff*pxf;
+//zjx=zjx*pcd;
+zjx = document.calculator.fenbianlv.value * document.calculator.hangxiangpx.value * (100-document.calculator.hangxiangcd.value)/100;
+zjg = document.calculator.fenbianlv.value * document.calculator.pangxiangpx.value * (100-document.calculator.pangxiangcd.value)/100;
+
+}
+
+
+Display();
+}
+
+function changecam()
+{
+if (document.calculator.cam.value =="uce80")
+{
+document.calculator.pangxiangpx.value=20010;
+document.calculator.hangxiangpx.value=13080;
+document.calculator.jiaoju.value=80
+document.calculator.xiangyuandaxiao.value=5.2
+}
+
+if (document.calculator.cam.value =="uclp")
+{
+document.calculator.pangxiangpx.value=11074;
+document.calculator.hangxiangpx.value=7920;
+document.calculator.jiaoju.value=70
+document.calculator.xiangyuandaxiao.value=6
+}
+
+if (document.calculator.cam.value =="ucd")
+{
+document.calculator.pangxiangpx.value=11500;
+document.calculator.hangxiangpx.value=7500;
+document.calculator.jiaoju.value=100
+document.calculator.xiangyuandaxiao.value=9
+}
+
+if (document.calculator.cam.value =="ucx")
+{
+document.calculator.pangxiangpx.value=14430;
+document.calculator.hangxiangpx.value=9420;
+document.calculator.jiaoju.value=100
+document.calculator.xiangyuandaxiao.value=7.2
+}
+
+if (document.calculator.cam.value =="ucxp")
+{
+document.calculator.pangxiangpx.value=17310;
+document.calculator.hangxiangpx.value=11310;
+document.calculator.jiaoju.value=100
+document.calculator.xiangyuandaxiao.value=6
+}
+
+if (document.calculator.cam.value =="mark24")
+{
+document.calculator.pangxiangpx.value=5616;
+document.calculator.hangxiangpx.value=3744;
+document.calculator.jiaoju.value=24
+document.calculator.xiangyuandaxiao.value=6.4
+}
+
+if (document.calculator.cam.value =="mark35")
+{
+document.calculator.pangxiangpx.value=5616;
+document.calculator.hangxiangpx.value=3744;
+document.calculator.jiaoju.value=35
+document.calculator.xiangyuandaxiao.value=6.4
+}
+
+
+}
+
+
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+
+
+<table>
+<td>地面分辨率（米）：</td>
+<td></td>
+<tr>
+<td>航摄仪型号：
+</td>
+<td>
+UCEUCLpUCDUCXUCXp5D MarkII 245D MarkII 35</td>
+</tr>
+<tr>
+<td>焦距（mm）：</td>
+<td></td>
+</tr>
+<tr>
+<td>象元大小（μm）：</td>
+<td></td>
+</tr>
+<tr>
+<td>旁向像幅（像素）：</td>
+<td></td>
+</tr>
+<tr>
+<td>航向像幅（像素）：</td>
+<td></td>
+</tr>
+<tr>
+<td>旁向重叠度（%）：</td>
+<td></td>
+</tr>
+<tr>
+<td>航向重叠度（%）：</td>
+<td></td>
+</tr>
+<tr><td text-align:center>
+<br>计算结果（取整）</td></tr>
+<tr>
+<td>相对航高（米）:</td>
+<td></td>
+</tr>
+<tr>
+<td>基线（米）    :</td>
+<td></td>
+</tr>
+<tr>
+<td>航线间隔（米）:</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr></tr>
+</table>
+
+<p>
+</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Calc maintained by <a href="https://github.com/henjuewang">henjuewang</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
